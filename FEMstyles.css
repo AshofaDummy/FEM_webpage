@@ -4,19 +4,23 @@
     font-size: medium;
     width:100vw;
     height: auto;
+    margin: 0;
 }
 
 body{
-    width:100%
+    width:100%;
+    margin: 0;
 }
 
 /*Header*/
-.header_wrapper{
-    display:flex;
+header{
     background-color: rgb(228, 17, 127);
-    justify-content: space-around;
     max-height: 5vh;
     width: 100vw;
+}
+.header_wrapper{
+    display:flex;
+    justify-content: space-around;
     height: auto;
 }
 /*Tener un divisor para contener el logo 
@@ -28,8 +32,9 @@ body{
     box-sizing: border-box;
     align-items: center;
     padding:3px;
-    width:25%;
-    height:auto;
+    max-width:25%;
+    width: auto;
+    height:inherit;
     margin: 3px auto;
 }
 .logo{
