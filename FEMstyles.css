@@ -1,9 +1,9 @@
-
 :root{
     background-color: rgb(254, 255, 250);
     font-family:'Noto Sans', sans-serif;
     font-size: medium;
     width:100vw;
+    height: auto;
 }
 
 body{
@@ -15,6 +15,7 @@ body{
     display:flex;
     background-color: rgb(228, 17, 127);
     justify-content: space-around;
+    max-height: 5vh;
     width: 100vw;
     height: auto;
 }
