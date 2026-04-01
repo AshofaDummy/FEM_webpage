@@ -83,12 +83,12 @@ p strong{
 
 .links-div{
     margin: auto;
-    max-width:400px;
+    max-width:800px;
 }
 
 #Links a{
     display:block;
-    max-width: 400px;
+    max-width: 800px;
     width:100%;
     margin: 5px;
     outline:solid rgb(228, 17, 127) 2px;
