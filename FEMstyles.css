@@ -5,6 +5,7 @@
     font-size: medium;
     max-width:100vw;
     overflow: scroll;
+    margin:0;
     padding:0;
     --FEM-magenta: #E40C7F;
     --FEM-verde: rgb(0, 114, 80);
