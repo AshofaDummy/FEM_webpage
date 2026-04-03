@@ -1,17 +1,18 @@
 :root{
-    font-family: Montserrat, monospace;
-    font-size: medium;
-    max-width:100vw;
-    overflow: scroll;
     margin:0;
     padding:0;
+    overflow: scroll;
+    max-width:100vw;
+    height:auto;
+    font-family: Montserrat, monospace;
+    font-size: medium;
+    background-color: blue;
+    max-width:100vw;
     --FEM-magenta: #E40C7F;
     --FEM-verde: rgb(0, 114, 80);
     --FEM-blanco: #F6F6F6;
-    backgground-color: var(--FEM-blanco);
+    --FEM-fondo: #fffcfc;
 }
-
-/*Header*/
 
 body{
     width:100%;
@@ -20,27 +21,34 @@ body{
     padding:0;
 }
 
-/*Tener un divisor para contener el logo 
-    y otro para contener la navegación me permite usar correctamente el flex: justify between del header.
-    Le agrego padding para evitar colapsos.*/
+/*HEADER*/
 
 header{
+    position: sticky;
+    z-index: 2;
+    top:0;
+    left:0;
     margin:0;
     padding:0;
     width: 100%;
-    background-color:var(--FEM-magenta);
     max-height: 10vh;
-}
-
-.header-div{
-    display:flex;
-    justify-content: space-between;
-    max-height:inherit;
-    width: 100%;
     height: auto;
+    background-color: var(--FEM-magenta);
+    display: flex;
+    justify-content: space-around;
 }
 
-.logo_div{ 
+.header-wrapper{
+    margin:inherit;
+    padding:inherit;
+    width: inherit;
+    max-height: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-div{
     display: flex; 
     box-sizing: border-box;
     align-items: center;
@@ -48,66 +56,67 @@ header{
     max-width:100px;
     max-height:inherit;
     height:auto;
-    margin: 5px auto;
-}
-.logo{
-   align-items: center;
-    max-height:inherit;
-   width:100%;
-   max-height:80%;
-   height: auto;
-}
-.nav_div{
-    display: flex;
-    align-items: center;
-    margin-right: 3px;
-    max-height:inherit;
-    padding:3px;
-    width: 30%;
-    height:auto;
-}
-.quienes_somos{
-    width: 100%;
-    text-decoration: none;
-    max-height:inherit;
-    font-size: 1.1rem;
-    font-weight: bold;
-    align-items: center;
-    color:var(--FEM-blanco);
 }
 
-/*Body*/
-main{
-    padding: 0 10px;
-    margin:0;
+.nav-div{
+    display: flex;
+    box-sizing: content-box;
+    align-items: center;
+    width: min-content;
+    max-width: 200px;
+    max-height:inherit;
+    height: auto;
 }
+nav{
+    text-align: center;
+}
+nav>a{
+    color: var(--FEM-blanco);
+    text-decoration:none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/*MAIN*/
+
+main{
+    padding:0;
+    padding-left: 5px;
+    margin:auto;
+    max-width: 900px;
+    width:auto;
+    height: auto;
+}
+
 h1{
     font-family: Montserrat;
     color:var(--FEM-magenta);
     font-weight: 850;
     font-size: 2.5rem;
+    overflow-wrap: break-word;
 }
 
-p{
+#bienvenida p{
     font-family: Montserrat, monospace;
     font-size: 1.1rem;
     text-align: justify;
     font-weight: 400;
 }
-p strong{
+#bienvenida strong{
     color: var(--FEM-verde);
 }
 
-/*Seccion de links*/
-.links-div{
+/*Links*/
+
+#links{
     margin: auto;
-    max-width:900px;
+    max-width:inherit;
 }
 
-#Links a{
+#links a{
     display:block;
-    max-width: 900px;
-    width:100%;
+    max-width: inherit;
+    width:auto;
     margin: 5px;
     outline:solid var(--FEM-magenta) 2px;
     text-decoration: none;
@@ -119,7 +128,7 @@ p strong{
     overflow:hidden;
 }
 
-#Links a:hover{
+#links a:hover{
     background-color: var(--FEM-magenta);
     color: var(--FEM-blanco);
     box-shadow: 5px 10px var(--FEM-verde);
@@ -127,77 +136,84 @@ p strong{
     transition: 0.5s ease;
 }
 
-/*Diseño del footer*/
+/*FOOTER*/
+hr{
+ border: 1px solid #dedad3;
+}
 
-#footer{
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+ footer {
     width:100%;
-    max-width:100%;
-    height: 10px;
+    height: auto;
     margin:0;
-    overflow-x: hidden;
-    
-}
-
-footer{
-    width:100%;
-    max-width:100%;
-    margin-top:0;
     padding:0;
-    overflow-x: hidden;
-    
-   
-}
-.contacto{ 
-    display:flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
-    color: grey;
-}
+    width: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+  }
 
-.nombre_contacto{
-    max-width: 35%;
-    color:black;
-    font-weight: bold;
+  .logo {
     text-align: left;
-    color: grey;
-}
+    display: flex;
+    box-sizing: content-box;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--FEM-magenta);
+    max-width: 30%;
+  }
 
-.rrss{
-    display:flex;
-    max-width:33%;
+  .socials {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .social-div{
+    text-align: center;
+  }
+
+  .socials a {
+    text-align: center;
+    display: flex;
     align-items: center;
-    color: grey;
-}
+    gap: 0.4rem;
+    color: #888;
+    text-decoration: none;
+    
+  }
 
-.rrss ul{
-    list-style-type: none;
-}
+  .socials a:hover {
+    color: var(--FEM-verde);
+  }
 
-.nombre_red_social::before{
-    content: "";
-    display: inline-block;
-    background-image:url(Logo_of_Twitter.svg);
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center; 
-    height: 1.5rem;
-    width: 1.5rem;
-    align-items: first baseline;
-    margin-right: 10px;
-    margin-bottom: -5px;
-}
+  .socials a span{
+    font-weight: 800;
+  }
 
-.nombre_red_social{
-    display:inline;
-    height: 1rem;
-    align-items: center;
-    color: grey;
-}
-.seguinos{
-    max-width: 33%;
+  .socials-svg {
+    box-sizing: border-box;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .socials-text{
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
     text-align: right;
-    color:black;
-    font-weight: bold;
-    color: grey;
-}
+    width: 20%;
+    font-size: 1rem;
+  }
