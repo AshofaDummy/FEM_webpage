@@ -5,7 +5,7 @@
     max-width:100vw;
     height:auto;
     font-family: Montserrat, monospace;
-    font-size: medium;
+    font-size: 14pt;
     background-color: blue;
     max-width:100vw;
     --FEM-magenta: #E40C7F;
@@ -94,7 +94,7 @@ h1{
     font-family: Montserrat;
     color:var(--FEM-magenta);
     font-weight: 850;
-    font-size: 2.5rem;
+    font-size: 2rem;
     overflow-wrap: break-word;
 }
 
@@ -103,23 +103,75 @@ h2{
     color:var(--FEM-blanco);
     background-color: var(--FEM-magenta);
     font-weight: 850;
-    font-size: 2rem;
+    font-size: 1.5rem;
     overflow-wrap:anywhere;
     padding: 0 3px;
     width: auto;
     margin-bottom: 0.8rem;
 }
 
+h3{
+  font-family: Montserrat;
+  color:var(--FEM-magenta);
+  font-weight: 850;
+  font-size: 1.2rem;
+  overflow-wrap:anywhere;
+  padding: 0 3px;
+  width: auto;
+  margin-bottom: 0.8rem;
+}
+
 p{
     font-family: Montserrat, monospace;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
     font-weight: 400;
     margin: 5px 1px;
-    padding: 0.1rem;
+    padding: 0.3rem;
 }
+
+
 strong{
     color: var(--FEM-verde);
+}
+
+b{
+  color: var(--FEM-verde);
+}
+
+#azul{
+  color:rgb(15, 46, 148);
+  font-weight: 800;
+}
+
+#rosa{
+  color: var(--FEM-magenta);
+  font-weight: 800;
+}
+
+.mapa-de-carrera h2{
+color: var(--FEM-magenta);
+font-size: 1rem;
+background-color: rgba(0, 0, 0, 0);
+margin: 3px
+}
+
+.mapa-de-carrera img{
+  display: flex;
+  margin: auto;
+  max-height: 80vh;
+  margin: 3px auto;
+
+}
+
+.label{
+  display: block;
+  margin: 3px auto;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--FEM-magenta);
+  
 }
 
 /*Links*/
