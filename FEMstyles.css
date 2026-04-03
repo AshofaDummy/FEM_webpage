@@ -15,8 +15,10 @@
 }
 
 body{
+  background-color:var(--FEM-fondo);
     width:100%;
-    height: auto;
+    min-height: 100vh;
+    height:100%;
     margin:0;
     padding:0;
 }
@@ -96,13 +98,27 @@ h1{
     overflow-wrap: break-word;
 }
 
-#bienvenida p{
+h2{
+  font-family: Montserrat;
+    color:var(--FEM-blanco);
+    background-color: var(--FEM-magenta);
+    font-weight: 850;
+    font-size: 2rem;
+    overflow-wrap:anywhere;
+    padding: 0 3px;
+    width: auto;
+    margin-bottom: 0.8rem;
+}
+
+p{
     font-family: Montserrat, monospace;
     font-size: 1.1rem;
     text-align: justify;
     font-weight: 400;
+    margin: 5px 1px;
+    padding: 0.1rem;
 }
-#bienvenida strong{
+strong{
     color: var(--FEM-verde);
 }
 
@@ -113,7 +129,7 @@ h1{
     max-width:inherit;
 }
 
-#links a{
+.page-link{
     display:block;
     max-width: inherit;
     width:auto;
@@ -128,17 +144,30 @@ h1{
     overflow:hidden;
 }
 
-#links a:hover{
+.page-link:hover{
     background-color: var(--FEM-magenta);
     color: var(--FEM-blanco);
     box-shadow: 5px 10px var(--FEM-verde);
     transform: translateY(-10px);
     transition: 0.5s ease;
 }
+#link-comunidad-wpp{
+  height: min-content;
+  margin:1rem;
+  font-size: 1.5rem;
+  padding-bottom: 0.3rem;
+}
+
+main a{
+  color:var(--FEM-magenta);
+  font-weight: 900;
+  text-decoration: underline;
+}
 
 /*FOOTER*/
 hr{
  border: 1px solid #dedad3;
+ margin: 15px 0;
 }
 
 
@@ -150,9 +179,10 @@ hr{
 }
 
  footer {
+  position:static;
     width:100%;
     height: auto;
-    margin:0;
+    margin:1px;
     padding:0;
     width: auto;
     padding: 1rem;
