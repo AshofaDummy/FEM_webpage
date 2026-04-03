@@ -5,7 +5,8 @@
     max-width:100vw;
     height:auto;
     font-family: Montserrat, monospace;
-    font-size: medium;
+    font-size: 14pt;
+    background-color: blue;
     max-width:100vw;
     --FEM-magenta: #E40C7F;
     --FEM-verde: rgb(0, 114, 80);
@@ -14,8 +15,10 @@
 }
 
 body{
+  background-color:var(--FEM-fondo);
     width:100%;
-    height: auto;
+    min-height: 100vh;
+    height:100%;
     margin:0;
     padding:0;
 }
@@ -91,18 +94,84 @@ h1{
     font-family: Montserrat;
     color:var(--FEM-magenta);
     font-weight: 850;
-    font-size: 2.5rem;
+    font-size: 2rem;
     overflow-wrap: break-word;
+}
+
+h2{
+  font-family: Montserrat;
+    color:var(--FEM-blanco);
+    background-color: var(--FEM-magenta);
+    font-weight: 850;
+    font-size: 1.5rem;
+    overflow-wrap:anywhere;
+    padding: 0 3px;
+    width: auto;
+    margin-bottom: 0.8rem;
+}
+
+h3{
+  font-family: Montserrat;
+  color:var(--FEM-magenta);
+  font-weight: 850;
+  font-size: 1.2rem;
+  overflow-wrap:anywhere;
+  padding: 0 3px;
+  width: auto;
+  margin-bottom: 0.8rem;
 }
 
 #bienvenida p{
     font-family: Montserrat, monospace;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
     font-weight: 400;
+    margin: 5px 1px;
+    padding: 0.3rem;
 }
-#bienvenida strong{
+
+
+strong{
     color: var(--FEM-verde);
+}
+
+b{
+  color: var(--FEM-verde);
+}
+
+#azul{
+  color:rgb(15, 46, 148);
+  font-weight: 800;
+}
+
+#rosa{
+  color: var(--FEM-magenta);
+  font-weight: 800;
+}
+
+.mapa-de-carrera h2{
+color: var(--FEM-magenta);
+font-size: 1rem;
+background-color: rgba(0, 0, 0, 0);
+margin: 3px
+}
+
+.mapa-de-carrera img{
+  display: flex;
+  margin: auto;
+  max-height: 80vh;
+  margin: 3px auto;
+
+}
+
+.label{
+  display: block;
+  margin: 3px auto;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--FEM-magenta);
+  
 }
 
 /*Links*/
@@ -112,7 +181,7 @@ h1{
     max-width:inherit;
 }
 
-#links a{
+.page-link{
     display:block;
     max-width: inherit;
     width:auto;
@@ -127,17 +196,30 @@ h1{
     overflow:hidden;
 }
 
-#links a:hover{
+.page-link:hover{
     background-color: var(--FEM-magenta);
     color: var(--FEM-blanco);
     box-shadow: 5px 10px var(--FEM-verde);
     transform: translateY(-10px);
     transition: 0.5s ease;
 }
+#link-comunidad-wpp{
+  height: min-content;
+  margin:1rem;
+  font-size: 1.5rem;
+  padding-bottom: 0.3rem;
+}
+
+main a{
+  color:var(--FEM-magenta);
+  font-weight: 900;
+  text-decoration: underline;
+}
 
 /*FOOTER*/
 hr{
  border: 1px solid #dedad3;
+ margin: 15px 0;
 }
 
 
@@ -149,9 +231,10 @@ hr{
 }
 
  footer {
+  position:static;
     width:100%;
     height: auto;
-    margin:0;
+    margin:1px;
     padding:0;
     width: auto;
     padding: 1rem;
