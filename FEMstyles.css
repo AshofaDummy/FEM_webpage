@@ -6,7 +6,6 @@
     height:auto;
     font-family: Montserrat, monospace;
     font-size: medium;
-    background-color: blue;
     max-width:100vw;
     --FEM-magenta: #E40C7F;
     --FEM-verde: rgb(0, 114, 80);
@@ -54,7 +53,7 @@ header{
     align-items: center;
     width:25%;
     max-width:100px;
-    max-height:inherit;
+    max-height:10vh;
     height:auto;
 }
 
