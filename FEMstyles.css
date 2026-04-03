@@ -56,7 +56,7 @@ header{
     align-items: center;
     width:25%;
     max-width:100px;
-    max-height:inherit;
+    max-height:10vh;
     height:auto;
 }
 
@@ -121,7 +121,7 @@ h3{
   margin-bottom: 0.8rem;
 }
 
-p{
+#bienvenida p{
     font-family: Montserrat, monospace;
     font-size: 1rem;
     text-align: justify;
