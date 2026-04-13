@@ -11,6 +11,8 @@
 
 </svg>
 
+<!--Import Built Titling-->
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -22,8 +24,9 @@
         <meta name="description" content="Toda la información que necesitas en tus primeros años en la FCEN-UBA. 
         Ingresá para acceder a Becas, Actividades, Talleres, Planes de estudios, Info de las materias, 
         Recomendaciones, y mucho mucho más">
+        <!--stylesheets and views-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="FEMstyles.css"> <!--Agregar links-->
+        <link rel="stylesheet" href="FEMstyles.css"> 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <base href="index.html"  target="_blank">
         <!--og section-->
@@ -37,7 +40,6 @@
     </head>
     <body>
         <header>
-            <div class="header-wrapper">
             <div class="logo-div">
             <a href=".home"><img src="./Assets/Logo FEM.svg"></a>
             </div>
@@ -45,7 +47,6 @@
             <nav>
                 <a class="quienes_somos" href="#Quienes somos">Quienes Somos?</a>
             </nav>
-            </div>
             </div>
         </header>
         <main>
@@ -67,7 +68,7 @@
                     o mandándole mensaje al 11 3647-7948 (Bruno) 🤗🤗🤗</strong>
                 </p>
             </section>
-            <section >
+            <section id="links">
                 <a href="Informacion-general.html", class="page-link">Información General</a> 
                 <a href="alimentos.html", class="page-link">Alimentos</a>
                 <a href="atmosferas.html", class="page-link">Atmósferas</a> 
@@ -84,16 +85,28 @@
         </main>
         <hr>
         <footer>
-            <p class="logo">FEM - Fuerza de Estudiantes en Movimiento</p>
-            <nav class="socials">
-                <div class="social-div" >
-                <a href="https://instagram.com/yourusername"><svg class="socials-svg" id="igsvg"><use href="#icon-instagram"/></svg ><span>@yourusername</span></a>
-                </div>
-                <div class="social-div">
+            <p class="container name">FEM - Fuerza de Estudiantes en Movimiento</p>
+            <address class="container address">
+
+                <!--revisar links y usernames-->
+            <a href="https://twitter.com/yourusername" class="container"><svg class="svg-sociales" id="ig-svg"> <use href="#icon-instagram"></use></svg><span class="p-sociales">@fem.exacatas</span></a>
+            <a href="https://twitter.com/yourusername" class="container"><svg class="svg-sociales" id="ig-svg"> <use href="#icon-twitter"></use></svg><span class="p-sociales">@fem.exacatas</span></a>
+        </address>
+        <p class="container seguinos">Seguinos para enterarte de todas las novedades!</p>
+            <!--
+            <p class="logo container">FEM - Fuerza de Estudiantes en Movimiento</p>
+            
+            
+            
+            <address>
+                <div class="social-div container">
+                <a href="https://instagram.com/yourusername" class="container"><svg class="socials-svg" id="igsvg"><use href="#icon-instagram"/></svg ><span>@fem.exactas</span></a>
+                <div class="social-div container">
                 <a href="https://twitter.com/yourusername"><svg class="socials-svg" id="twitter"><use href="#icon-twitter"/></svg><span>@yourusername</span></a>
                 </div>
-            </nav>
-            <p class="socials-text">Seguinos para enterarte de todas las novedades!</p>
-        </footer>
+                </div>
+            </address>
+            <p class="socials-text" container>Seguinos para enterarte de todas las novedades!</p>
+        --> </footer>
     </body>
    
