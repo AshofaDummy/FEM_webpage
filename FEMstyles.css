@@ -169,13 +169,22 @@ main a{
 #links{
     margin: auto;
     max-width:inherit;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+  #links {
+    max-width: 95%;
+    margin:auto;
+    text-align: center;
+  }
 }
 
 .page-link{
     display:block;
-    max-width: inherit;
+    max-width: 100%;
     width:auto;
-    margin: 5px;
+    margin: 5px auto;
     outline:solid var(--FEM-magenta) 2px;
     text-decoration: none;
     text-align: center;
@@ -212,6 +221,10 @@ hr{
   footer {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .page-link{
+    margin: 5px;
   }
 }
 
